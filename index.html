@@ -97,9 +97,6 @@
       .menu-burger__label {
         display: none;
       }
-      .btn-box--mobile {
-        display: none;
-      }
       .menu__list {
         padding: 0 0 0 10px;
         margin: 0;
@@ -240,7 +237,7 @@
         color: #000;
       }
       .registration:hover {
-        background-color: #f67024;
+        background-color: #00ccd9;
         box-shadow: none;
       }
       .main {
@@ -388,14 +385,13 @@
       .spoiler__list-item::before {
         counter-increment: li;
         content: counters(li, '.') '. ';
-        /* opacity: 0.5; */
         color: #000;
         font-weight: 400;
       }
       .questions__item {
         position: relative;
         border-radius: 5px;
-        /* border-bottom: 3px solid #e45809; */
+        border-left: 3px solid #00ccd9;
       }
       .questions__item + .questions__item {
         margin-top: 15px;
@@ -411,8 +407,8 @@
         padding: 15px 30px 15px 20px;
         position: relative;
         cursor: pointer;
-        background: #ececec;
-        border-bottom: 2px solid #00ccd9;
+        background: #37003c;
+        color: #fff;
       }
       .questions__label::after,
       .questions__label::before {
@@ -435,7 +431,7 @@
       }
       .questions__content {
         padding: 20px;
-        /* background: transparent; */
+        background: #ececec;
         display: block;
       }
       .questions__input:checked ~ .questions__label::after {
@@ -480,16 +476,16 @@
         position: absolute;
         bottom: -15px;
         right: 3%;
-        background-color: #222d56;
+        background-color: #0bd9e9;
         border: none;
-        color: #fff;
+        color: #000;
         padding: 7px 30px 6px;
         font-size: 18px;
         border-radius: 5px;
         transition: background 0.5s;
       }
       .comments__btn:hover {
-        background-color: #211d45;
+        background-color: #00ccd9;
       }
       .footer {
         padding: 50px 0;
@@ -550,7 +546,7 @@
         }
         .logo__img {
           width: 94px;
-          height: 16px;
+          height: 18px;
         }
         .menu-burger__label {
           left: 10px;
@@ -559,26 +555,6 @@
         .menu {
           width: 100%;
         }
-        .btn-box--mobile {
-          display: block;
-          width: 100%;
-          display: flex;
-          justify-content: space-around;
-          margin-bottom: 15px;
-        }
-        .btn__link--mobile {
-          font-size: 16px;
-          line-height: 22px;
-          font-weight: 600;
-          padding: 10px 40px 13px;
-          border-radius: 22px;
-        }
-        /* .log-in--mobile {
-          background-color: #353b52;
-        }
-        .registration--mobile {
-          background-color: #e45809;
-        } */
         .main {
           padding: 245px 8px 30px;
           background-size: cover;
@@ -623,11 +599,6 @@
           padding: 5px 30px;
         }
       }
-      /* @media (max-width: 370px) {
-        .header__btn-box {
-          display: none;
-        }
-      } */
     </style>
   </head>
   <body>
@@ -636,10 +607,6 @@
         <input class="menu-burger__input" type="checkbox" id="burger" />
         <label class="menu-burger__label" for="burger"><span></span></label>
         <nav class="menu">
-          <!-- <div class="btn-box btn-box--mobile">
-            <a class="btn__link--mobile log-in--mobile" href="go">Log in</a>
-            <a class="btn__link--mobile registration--mobile" href="go">Sign up</a>
-          </div> -->
           <p class="menu__title">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
